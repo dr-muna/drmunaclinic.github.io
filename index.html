@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="عيادة الدكتورة منى عادل محمد للأمراض النسائية والتوليد والعقم ورعاية الحوامل في كركوك">
+<title>عيادة الدكتورة منى عادل محمد | OB-GYN Clinic</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600&display=swap');
+
+:root{
+  --rose:#b76e79; --rose-dark:#8f4d59; --cream:#fbf8f5; --ink:#303034;
+  --muted:#747277; --white:#fff; --line:#eadfe0; --soft:#f4e9e9;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Cairo,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.9}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(251,248,245,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(234,223,224,.7)}
+.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:800;color:var(--rose-dark);font-size:19px}
+.logo small{display:block;font-size:10px;letter-spacing:2px;color:var(--muted);direction:ltr;text-align:right}
+.nav-links{display:flex;gap:25px;font-size:14px;font-weight:600}
+.nav-links a:hover{color:var(--rose)}
+.menu{display:none;background:none;border:0;font-size:25px;color:var(--rose-dark)}
+
+.hero{padding:145px 0 90px;min-height:720px;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:#f0dfe0;left:-180px;top:70px;opacity:.55}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center;position:relative}
+.badge{display:inline-block;padding:7px 15px;background:var(--soft);color:var(--rose-dark);border-radius:30px;font-size:13px;font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(38px,5vw,65px);line-height:1.25;margin-bottom:12px;font-weight:800}
+h1 span{color:var(--rose-dark)}
+.tagline{font-size:21px;font-weight:600;line-height:1.8;max-width:680px}
+.hero-text{color:var(--muted);margin:16px 0 28px;max-width:650px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{padding:12px 24px;border-radius:12px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;transition:.25s;border:1px solid transparent}
+.btn-primary{background:var(--rose);color:white}.btn-primary:hover{background:var(--rose-dark);transform:translateY(-2px)}
+.btn-outline{border-color:var(--rose);color:var(--rose-dark);background:white}.btn-outline:hover{background:var(--soft)}
+.hero-card{background:white;border:1px solid var(--line);border-radius:28px;padding:35px;box-shadow:0 20px 60px rgba(80,45,50,.09)}
+.card-top{display:flex;align-items:center;gap:18px;margin-bottom:22px}
+.avatar{width:76px;height:76px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-size:31px;color:var(--rose-dark)}
+.hero-card h2{font-size:23px}
+.hero-card .english{direction:ltr;text-align:right;font-size:11px;letter-spacing:2px;color:var(--muted)}
+.credential{padding:13px 0;border-top:1px solid var(--line);font-size:14px}
+.credential strong{color:var(--rose-dark)}
+
+section{padding:92px 0}
+.section-head{text-align:center;margin-bottom:48px}
+.eyebrow{color:var(--rose-dark);font-weight:800;font-size:13px;letter-spacing:.5px}
+.section-head h2{font-size:35px;margin:7px 0}
+.section-head p{color:var(--muted);max-width:650px;margin:auto}
+
+.about{background:white}
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+.quote-card{background:linear-gradient(145deg,#f6e8e9,#fff);border:1px solid var(--line);padding:38px;border-radius:25px}
+.quote{font-size:26px;font-weight:700;color:var(--rose-dark);line-height:1.7}
+.about-text p{color:var(--muted);margin:15px 0}
+.credentials{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
+.cred-box{border:1px solid var(--line);background:var(--cream);border-radius:13px;padding:13px;font-size:13px}
+.cred-box b{display:block;color:var(--rose-dark);font-size:15px;margin-bottom:2px}
+
+.services{background:var(--cream)}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{background:white;border:1px solid var(--line);border-radius:20px;padding:28px;transition:.25s}
+.service:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(80,45,50,.08)}
+.icon{width:50px;height:50px;border-radius:15px;background:var(--soft);display:grid;place-items:center;font-size:25px;margin-bottom:16px}
+.service h3{font-size:18px;margin-bottom:7px}.service p{font-size:13px;color:var(--muted)}
+
+.cta{padding:65px 0;background:var(--rose-dark);color:white}
+.cta-grid{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.cta h2{font-size:31px}.cta p{opacity:.9;margin-top:5px}
+.cta .btn{background:white;color:var(--rose-dark)}
+
+.contact{background:white}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.contact-card{border:1px solid var(--line);border-radius:22px;padding:30px;background:var(--cream)}
+.contact-item{display:flex;gap:15px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line)}
+.contact-item:last-child{border-bottom:0}
+.contact-icon{font-size:23px;width:40px}
+.contact-item h3{font-size:15px}.contact-item p{font-size:14px;color:var(--muted)}
+.map-box{min-height:330px;border-radius:22px;background:#eee4df;border:1px solid var(--line);display:grid;place-items:center;text-align:center;padding:30px;color:var(--rose-dark)}
+.map-box strong{font-size:22px;display:block}
+
+footer{padding:30px 0;background:#2f292b;color:#ddd;text-align:center;font-size:12px}
+footer strong{color:white}
+
+.reveal{animation:fadeUp .8s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+@media(max-width:800px){
+ .nav-links{display:none;position:absolute;top:76px;right:0;left:0;background:var(--cream);padding:20px;flex-direction:column;gap:8px;border-bottom:1px solid var(--line)}
+ .nav-links.open{display:flex}.menu{display:block}
+ .hero{padding-top:125px}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+ .hero-grid{gap:35px}.service-grid{grid-template-columns:1fr 1fr}.cta-grid{display:block}.cta .btn{margin-top:20px}
+}
+@media(max-width:520px){
+ section{padding:65px 0}.service-grid{grid-template-columns:1fr}.credentials{grid-template-columns:1fr}
+ h1{font-size:38px}.tagline{font-size:18px}.hero-card{padding:24px}
+ .actions .btn{width:100%}.nav-inner{height:68px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="logo" href="#home">عيادة الدكتورة منى عادل محمد<small>OB-GYN CLINIC</small></a>
+    <button class="menu" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="القائمة">☰</button>
+    <div class="nav-links">
+      <a href="#home">الرئيسية</a>
+      <a href="#about">عن الدكتورة</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#contact">التواصل</a>
+    </div>
+  </div>
+</nav>
+
+<main id="home">
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <span class="badge">OB-GYN Clinic • Kirkuk</span>
+      <h1>رعاية متكاملة<br><span>لصحة المرأة</span></h1>
+      <p class="tagline">في جميع مراحل حياتها</p>
+      <p class="hero-text">نسائية وتوليد • عقم • رعاية الحوامل • جراحة نسائية</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="tel:07701099261">📞 اتصلي بنا</a>
+        <a class="btn btn-outline" href="https://wa.me/9647701099261" target="_blank">💬 مراسلتنا عبر WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-card reveal">
+      <div class="card-top">
+        <div class="avatar">👩‍⚕️</div>
+        <div><h2>الدكتورة منى عادل محمد</h2><div class="english">OBSTETRICS &amp; GYNECOLOGY</div></div>
+      </div>
+      <div class="credential"><strong>الاختصاص</strong><br>الأمراض النسائية والتوليد والعقم ورعاية الحوامل</div>
+      <div class="credential"><strong>الدرجة العلمية</strong><br>دكتوراه (بورد عربي) في الأمراض النسائية والتوليد</div>
+      <div class="credential"><strong>المؤهلات</strong><br>C.A.B.O.G • M.B.Ch.B • H.D.G.O</div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">عن الدكتورة</div><h2>خبرة ورعاية باهتمام</h2><p>رعاية متخصصة تضع صحة المرأة واحتياجاتها في مقدمة الاهتمام.</p></div>
+  <div class="about-grid">
+   <div class="quote-card"><div class="quote">"رعاية صحية متخصصة للمرأة، من التخطيط للحمل إلى رعاية الحمل وصحة الجهاز التناسلي."</div></div>
+   <div class="about-text">
+    <p><strong>الدكتورة منى عادل محمد</strong> اختصاصية في الأمراض النسائية والتوليد والعقم ورعاية الحوامل، وطبيب استشاري وعضو المجلس العربي لاختصاص النسائية والتوليد.</p>
+    <p>تشمل الرعاية الاستشارات والمتابعة والتشخيص والعلاج في الأمراض النسائية، حالات تأخر الحمل والعقم، التخطيط للحمل، رعاية الحوامل، وإجراء العمليات الجراحية النسائية حسب الحالة والحاجة الطبية.</p>
+    <div class="credentials">
+      <div class="cred-box"><b>طبيب استشاري</b>اختصاص النسائية والتوليد</div>
+      <div class="cred-box"><b>بورد عربي</b>الأمراض النسائية والتوليد</div>
+      <div class="cred-box"><b>دبلوم عالي</b>الأمراض النسائية والتوليد</div>
+      <div class="cred-box"><b>بكالوريوس</b>طب وجراحة عامة</div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="services" class="services">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">خدمات العيادة</div><h2>رعاية متخصصة للمرأة</h2><p>خدمات نسائية وتوليدية مصممة لتلبية احتياجات المرأة في مراحل مختلفة.</p></div>
+  <div class="service-grid">
+   <article class="service"><div class="icon">🌸</div><h3>الأمراض النسائية</h3><p>تشخيص وعلاج ومتابعة مختلف الأمراض والمشكلات النسائية.</p></article>
+   <article class="service"><div class="icon">🤰</div><h3>رعاية الحوامل</h3><p>متابعة الحمل والعناية بصحة الأم والجنين خلال مراحل الحمل.</p></article>
+   <article class="service"><div class="icon">🌱</div><h3>التخطيط للحمل</h3><p>استشارات للنساء اللواتي يخططن للحمل والاستعداد الصحي له.</p></article>
+   <article class="service"><div class="icon">💗</div><h3>علاج العقم وتأخر الحمل</h3><p>تقييم ومتابعة حالات العقم وتأخر الحمل ووضع خطة علاج مناسبة للحالة.</p></article>
+   <article class="service"><div class="icon">🩺</div><h3>الجراحة النسائية</h3><p>إجراء العمليات الجراحية النسائية حسب التشخيص والحاجة الطبية.</p></article>
+   <article class="service"><div class="icon">👩</div><h3>استشارات صحة المرأة</h3><p>استشارات ومتابعة متخصصة لمختلف احتياجات صحة المرأة.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="container cta-grid">
+  <div><h2>للحجز والاستفسار</h2><p>يرجى مراسلتنا أو الاتصال بنا على الرقم التالي.</p></div>
+  <a class="btn" href="tel:07701099261">07701099261 &nbsp; 📞</a>
+ </div>
+</section>
+
+<section id="contact" class="contact">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">تواصل معنا</div><h2>نحن بانتظاركم</h2><p>للحجز والاستفسار، يمكنكم التواصل معنا عبر الهاتف أو المراسلة.</p></div>
+  <div class="contact-grid">
+   <div class="contact-card">
+    <div class="contact-item"><div class="contact-icon">📍</div><div><h3>العنوان</h3><p>كركوك – شارع الأطباء الرئيسي – <strong>مجمع فارابي الطبي</strong></p></div></div>
+    <div class="contact-item"><div class="contact-icon">📞</div><div><h3>الهاتف</h3><p><a href="tel:07701099261">07701099261</a></p></div></div>
+    <div class="contact-item"><div class="contact-icon">💬</div><div><h3>المراسلة</h3><p>متوفر عبر WhatsApp وTelegram</p></div></div>
+    <div class="actions" style="margin-top:18px">
+      <a class="btn btn-primary" href="https://wa.me/9647701099261" target="_blank">WhatsApp</a>
+      <a class="btn btn-outline" href="https://t.me/+9647701099261" target="_blank">Telegram</a>
+    </div>
+   </div>
+   <div class="map-box"><div>📍<strong>مجمع فارابي الطبي</strong><span>كركوك – شارع الأطباء الرئيسي</span></div></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer><strong>عيادة الدكتورة منى عادل محمد</strong> • OB-GYN Clinic<br>كركوك – شارع الأطباء الرئيسي – مجمع فارابي الطبي</footer>
+</body>
+</html>
